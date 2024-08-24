@@ -1,0 +1,25 @@
+<nav>
+    <div class="nav justify-content-center pt-2">
+        <h2 style="color: #BD0028;">Pollsy</h2>
+    </div>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{%url 'polls:index'%}">recently</a>
+        </li>
+        {%if user.is_authenticated%}
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'user:profile'%}">profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'polls:create_view'%}">create poll</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'user:logout'%}">logout</a>
+        </li>
+        {%else%}
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'user:login'%}">login</a>
+        </li>
+        {%endif%}
+      </ul>
+</nav>

@@ -1,0 +1,56 @@
+/*index nav*/
+body{
+    background-color: #171717;
+}
+
+/*index nav item*/
+.nav .nav-item a{
+    text-decoration: none;
+    color: #CACACA;
+}
+.nav .nav-item a:hover{
+    color: #6b6b6b;
+}
+
+/*question box*/
+.question-box h4{
+    color: #CACACA;
+}
+.question-box li{
+    list-style-type: none;
+    border: 1px solid #BD0028; /* Kutu için gri renkli bir çerçeve */
+    padding: 15px; /* İçerik ile kutunun kenarı arasındaki boşluk */
+    background-color: transparent; /* Açık gri bir arka plan rengi */
+    border-radius: 8px; /* Kenarların köşelerini yumuşatır */
+    margin: 10px; /* Üst ve alt boşluk */
+    max-width: 736px;
+}
+
+.question-box li a{
+    color: #CACACA;
+    text-decoration: none;
+}
+.question-box a:hover{
+    color: #6b6b6b;
+}
+
+/*detail.html*/
+.detail-body{
+    width: 100%;
+    height: 100vh;
+}
+.detail-main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    list-style-type: none;
+    border: 1px solid #BD0028; /* Kutu için gri renkli bir çerçeve */
+    padding: 15px; /* İçerik ile kutunun kenarı arasındaki boşluk */
+    background-color: transparent; /* Açık gri bir arka plan rengi */
+    border-radius:15px; /* Kenarların köşelerini yumuşatır */
+    margin: 2rem; /* Üst ve alt boşluk */
+
+    color: #CACACA;
+}
